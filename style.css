@@ -1,0 +1,182 @@
+/* الخلفية العامة للموقع */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    background-image: url('img/الدرعية-التاريخية.jpg');
+    /* ضع صورتك هنا */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* طبقة شفافة فوق الخلفية (اختياري) */
+/* إزالة التعليق إذا أردت طبقة شفافة فوق الصورة */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* شفافية خفيفة لتخفيف وضوح الصورة */
+    z-index: -1;
+}
+
+/* الهيدر */
+header {
+    background-color: rgba(0, 100, 0, 0.8);
+    /* أخضر شفاف */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* الهيدر */
+header {
+    background-color: rgba(0, 100, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+}
+
+/* اسم الكاتب / المؤلف
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+}
+
+/* عناوين الأقسام */
+h2 {
+    color: #006400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* الأقسام */
+.section {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* أبيض شفاف */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* فقرة نصية */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* قسم القيادة */
+#leaders {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.leader-item {
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* شفاف للأقسام الفرعية */
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* قسم الشعارات */
+#logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo-item {
+    max-width: 400px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* الفعاليات */
+.event-item {
+    background-color: rgba(255, 255, 255, 0.6);
+    /* أبيض شفاف */
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.event-item img {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+.event-item img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/* النشيد */
+#anthem {
+    text-align: center;
+    background-color: rgba(240, 255, 240, 0.7);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#anthem audio {
+    margin-top: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+/* الإنجازات */
+#achievements ul {
+    list-style-type: disc;
+    margin-left: 40px;
+}
+
+#achievements div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+#achievements img {
+    max-width: 100%;
+    border-radius: 10px;
+}
